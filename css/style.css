@@ -32,6 +32,9 @@ p{
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
 }
+.list-group p {
+    font-family: 'Oswald', sans-serif;
+}
 ul{
 	margin:0;
 	padding:0;
