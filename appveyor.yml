@@ -1,7 +1,9 @@
 version: 2.0.{build}
 build: off
 artifacts:
-- path: '_site/**/*'
+  - path: '_site/**/*'
+after_build:
+- cmd: copy _site\*.* .\*.* /Y
 deploy:
 - provider: FTP
   host:  ftp.readingjoggers.org
