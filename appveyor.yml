@@ -1,10 +1,10 @@
 version: 2.0.{build}
-build: off
+build: on
 artifacts:
   - path: '**/*'
 after_build:
 - ps: Remove-Item -Recurse (Get-Location) -Exclude _site
-- cmd: move _site\*.* .\*.* /Y
+- cmd: move .\_site\*.* .\*.* /Y
 deploy:
 - provider: FTP
   host:  ftp.readingjoggers.org
