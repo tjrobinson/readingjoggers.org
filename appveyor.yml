@@ -1,7 +1,7 @@
 version: 2.0.{build}
 build: off
 artifacts:
-- path: '**/*'
+- path: '_site/**/*'
 deploy:
 - provider: FTP
   host:  ftp.readingjoggers.org
@@ -9,7 +9,7 @@ deploy:
   username: rjadmin@boxwebs.co.uk
   password:
     secure: lDrcdb+gMhuq7xDg8Yt6Cg==
-  folder: /_site
+  folder: /
   active_mode: false
   beta: true
   debug: true
