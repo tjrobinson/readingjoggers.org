@@ -6,7 +6,8 @@ artifacts:
   - path: '**/*'
 after_build:
 - ps: Remove-Item -Recurse (Join-Path (Get-Location) "\*") -Exclude _site
-- cmd: move .\_site\*.* .\*.* /Y
+- cmd: copy .\_site\*.* .\*.* /Y
+- ps: Remove-Item -Recurse (Join-Path (Get-Location) "\_site\*")
 deploy:
 - provider: FTP
   host:  ftp.readingjoggers.org
