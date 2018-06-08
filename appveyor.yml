@@ -5,7 +5,7 @@ build_script:
 artifacts:
   - path: '**/*'
 after_build:
-- ps: Remove-Item -Recurse (Get-Location) -Exclude _site
+- ps: Remove-Item -Recurse (Join-Path (Get-Location) "\*") -Exclude _site
 - cmd: move .\_site\*.* .\*.* /Y
 deploy:
 - provider: FTP
