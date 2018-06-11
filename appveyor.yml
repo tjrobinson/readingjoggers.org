@@ -1,10 +1,9 @@
 version: 2.0.{build}
 build: on
 build_script:
-- ps: >-
-    Remove-item .\* -exclude "_site", ".git" -Force -ErrorAction SilentlyContinue -Recurse
-    robocopy .\_site\ (Get-Location)
-    Remove-Item _site -Force -Recurse
+- ps: Remove-item .\* -exclude "_site", ".git" -Force -ErrorAction SilentlyContinue -Recurse
+- ps: robocopy .\_site\ (Get-Location)
+- ps: Remove-Item _site -Force -Recurse
 artifacts:
   - path: '**/*'
 deploy:
