@@ -1,7 +1,7 @@
 version: 2.0.{build}
 build: on
 build_script:
-- ps: Remove-item .\* -exclude ("_site", ".git") -Force -ErrorAction SilentlyContinue -Recurse -Verbose
+- ps: Get-ChildItem -Path (Get-Location) -Recurse | Select -ExpandProperty FullName | Where {$_ -notlike '*_site*'} | sort length -Descending | Remove-Item -force 
 - cmd: robocopy .\_site\ pwd
 - ps: Remove-Item _site -Force -Recurse -Verbose
 artifacts:
