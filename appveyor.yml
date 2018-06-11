@@ -2,7 +2,7 @@ version: 2.0.{build}
 build: on
 build_script:
 - ps: Get-ChildItem -Path (Get-Location) -Recurse | Select -ExpandProperty FullName | Where {$_ -notlike '*_site*'} | sort length -Descending | Remove-Item -force -Verbose
-- cmd: robocopy .\_site\ . & exit 0
+- cmd: robocopy .\_site\ . /E & exit 0
 - ps: Remove-Item _site -Force -Recurse -Verbose
 artifacts:
   - path: '**/*'
