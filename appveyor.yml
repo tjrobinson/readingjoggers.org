@@ -1,4 +1,5 @@
 version: 2.0.{build}
+image: Visual Studio 2017
 build: on
 install:
 - cmd: set PATH=C:\Ruby22\bin;%PATH%
@@ -12,12 +13,19 @@ artifacts:
   - path: '**/*'
 deploy:
 - provider: FTP
-  host:  ftp.readingjoggers.org
+  host: ftp.readingjoggers.org
   protocol: ftp
-  username: rjadmin@boxwebs.co.uk
+  username: rjadmin@readingjoggers.org
   password:
-    secure: lDrcdb+gMhuq7xDg8Yt6Cg==
+    secure: 8KCvVFI3abgTATTLwhFe98uAOanO+EqouxZ5mP7Bbqs=
   folder: /
   active_mode: false
   beta: true
   debug: true
+notifications:
+- provider: Email
+  to:
+  - tom@tjrobinson.net
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: true
