@@ -1,5 +1,9 @@
 version: 2.0.{build}
 build: on
+install:
+- cmd: set PATH=C:\Ruby22\bin;%PATH%
+- cmd: gem install bundler
+- cmd: gem install jekyll
 build_script:
 - ps: Get-ChildItem -Path (Get-Location) -Recurse | Select -ExpandProperty FullName | Where {$_ -notlike '*_site*'} | sort length -Descending | Remove-Item -force -Verbose
 - cmd: robocopy .\_site\ . /E & exit 0
