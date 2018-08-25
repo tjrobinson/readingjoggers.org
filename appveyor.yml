@@ -18,7 +18,7 @@ deploy:
   protocol: ftp
   username: rjadmin@readingjoggers.org
   password:
-    secure: 8KCvVFI3abgTATTLwhFe98uAOanO+EqouxZ5mP7Bbqs=
+    secure: lDrcdb+gMhuq7xDg8Yt6Cg==
   folder: /
   active_mode: false
   beta: true
