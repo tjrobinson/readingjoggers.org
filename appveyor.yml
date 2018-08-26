@@ -1,15 +1,32 @@
-version: 1.0.{build}
-build: off
+version: 2.0.{build}
+image: Visual Studio 2017
+build: on
+install:
+- cmd: set PATH=C:\Ruby22\bin;%PATH%
+- cmd: gem install bundler
+- cmd: gem install jekyll
+build_script:
+- cmd: bundle exec jekyll build
+#- ps: Get-ChildItem -Path (Get-Location) -Recurse | Select -ExpandProperty FullName | Where {$_ -notlike '*_site*'} | sort length -Descending | Remove-Item -force -Verbose
+#- cmd: robocopy .\_site\ . /E & exit 0
+#- ps: Remove-Item _site -Force -Recurse -Verbose
 artifacts:
-- path: '**/*'
+  - path: '**/*'
 deploy:
 - provider: FTP
-  host:  ftp.readingjoggers.org
+  host: ftp.readingjoggers.org
   protocol: ftp
-  username: rjadmin@boxwebs.co.uk
+  username: rjadmin@readingjoggers.org
   password:
     secure: lDrcdb+gMhuq7xDg8Yt6Cg==
   folder: /
   active_mode: false
   beta: true
   debug: true
+notifications:
+- provider: Email
+  to:
+  - tom@tjrobinson.net
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: true

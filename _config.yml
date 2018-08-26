@@ -1,0 +1,17 @@
+title: Reading Joggers
+baseurl: ""
+url: "https://readingjoggers.org"
+markdown: kramdown
+plugins:
+  - jekyll-feed
+exclude:
+   - appveyor.yml
+   - CNAME
+   - README.md
+   - Gemfile
+   - Gemfile.lock
+   - node_modules
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
