@@ -1498,9 +1498,9 @@ ul.social-icons li a:hover{
 }
 /*--/index-team--*/
 .inner-banner {
-	min-height: 150px;
+	min-height: 300px;
 	background:url('../images/banner.jpg') no-repeat;
-   background-position: center center;
+   background-position: top center;
 
 }
 /*-- about-page-starts-here --*/
@@ -2292,7 +2292,7 @@ p.para1{
 		margin: 8em 0 0 0;
 	}
 	.inner-banner {
-		min-height: 130px;
+		min-height: 300px;
 	}
 	.abt-text p {
 		font-size: 0.96em;
@@ -2647,7 +2647,7 @@ p.para1{
 		border: 8px solid#eee;
 	}
 	.inner-banner {
-		min-height: 110px;
+		min-height: 300px;
 	}
 	.gallery-bottom {
 		margin-top: 1em;
@@ -2926,7 +2926,7 @@ p.para1{
 		padding: 2em 0;
 	}
 	.inner-banner {
-		min-height: 80px;
+		min-height: 300px;
 	}	
 	.blog-section {
 		padding: 2em 0;
