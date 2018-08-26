@@ -5,7 +5,6 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 exclude:
-   - appveyor.yml
    - CNAME
    - README.md
    - Gemfile
