@@ -1,6 +1,10 @@
 <p>&nbsp;</p>
 <ul class="list-group">
 
+
+
+
+
   <li class="list-group-item">
     <h3>Regular Club Runs - Tuesdays and Thursdays at 7pm</h3>
     Our regular club runs are held every week on Tuesday and Thursday and start at either the
@@ -37,6 +41,16 @@
 
   <!-- Events : Monthly  ---------------------------------------------->
 
+  {% for event in site.data.clubrunsandtraining %}
+  <li class="list-group-item">
+    <h3>{{ event.date }} : {{ event.title }} - {{ event.location }}</h3>
+    {% assign description = event.description %}
+    {{description}}
+    
+  </li>
+  {% endfor %}
+
+
   <li class="list-group-item">
     <h3>Tuesday 2nd October 2018 : Club Run - Prospect Park</h3>
     Meet at
@@ -46,7 +60,7 @@
   </li>
 
   <li class="list-group-item">
-    <h3>Thursday 4th October 2018 : 400 - 800m Intervals (or 800m intervals) - Beansheaf</h3>
+    <h3>Thursdy 4th October 2018 : 400 - 800m Intervals (or 800m intervals) - Beansheaf</h3>
     Meet at
     <a href="https://www.google.co.uk/maps/place/Beansheaf+Community+Centre/@51.438765,-1.050468,17z/data=!3m1!4b1!4m2!3m1!1s0x4876995b2055a6c3:0x5e5d81beae0b0b3b">Beansheaf
       Community Centre, RG31 7AW.</a>
@@ -74,53 +88,21 @@
 
   <li class="list-group-item">
     <h3>Tuesday 9th October 2018 : Club Run - Beansheaf</h3>
-    Meet at
-    <a href="https://www.google.co.uk/maps/place/Beansheaf+Community+Centre/@51.438765,-1.050468,17z/data=!3m1!4b1!4m2!3m1!1s0x4876995b2055a6c3:0x5e5d81beae0b0b3b">Beansheaf Community Centre, RG31 7AW.</a>
-    <br> Meet at 19:00 for 19:20 start
-    <br>
-    <br> Meet at the Beansheaf Community Centre as normal for a club run.
-    <br>
+    {% include event_beansheafclubrun.html %}
   </li>
 
   <li class="list-group-item">
-    <h3>Thursday 11th October 2018 : 500m Scorpions - Lansdowne Road / Grafton Road Circuit</h3>
-    <a href="https://www.google.com/maps/place/Reading+RG30+4QF,+UK/@51.4537445,-1.045622,17z/data=!3m1!4b1!4m2!3m1!1s0x4876996236af82bb:0xaf271528fcd2db75?hl=en-GB">Grafton
-      Road/Lansdowne Road, RG30 4QF.</a>
-    <br> Session will start at 19:20
-    <br> Meet at 19:00 for 19:20 start
-    <br>
-    <br>This session based on Lansdowne Road and Grafton Road, which lies between Mayfair and Halls Road.
-    <br>
-    <br>As the circuit is 500m it is ideal for tonight's session.
-    <br>
-    <br>The first 400m is at just under 10K pace and the final 100m at a faster pace. Each 500m will be followed by a 2
-    minute recovery. The faster 100m is NOT an all out sprint, but more like your finishing burst at the end of a race.
-    <br>
-    <br>The session will last 35-40 Minutes.
-    <br>
-    <br>During your recovery period, keep moving, walk or a very gentle jog and please do not stay on the path, to
-    allow others to pass freely.
-    <br>
-    <br>About 600-700 metres west of the Meadway Sports Centre you turn left off The Meadway into Halls Road.
-    <br>Take the second right off Halls Road into Burlington Road.
-    <br>At the end of Burlington Road is Lansdowne Road. Park safely on Lansdowne Road, but please do not block
-    entrances to driveways.
-    <br>You can also approach it from Langley Hill. Up Langley Hill to the roundabout and turn right into Halls Road.
-    <br>Then take the second left into Burlington Road. (The post code for Burlington Road is RG30 4QG)
+    <h3>Tuesday 11th October 2018 : 500m Scorpions - Lansdowne Road / Grafton Road Circuit</h3>
+    {% include event_scorpions.html %}
   </li>
 
   <li class="list-group-item">
     <h3>Tuesday 16th October 2018 : Club Run - Beansheaf</h3>
-    Meet at
-    <a href="https://www.google.co.uk/maps/place/Beansheaf+Community+Centre/@51.438765,-1.050468,17z/data=!3m1!4b1!4m2!3m1!1s0x4876995b2055a6c3:0x5e5d81beae0b0b3b">Beansheaf Community Centre, RG31 7AW.</a>
-    <br> Meet at 19:00 for 19:20 start
-    <br>
-    <br> Meet at the Beansheaf Community Centre as normal for a club run.
-    <br>
+    {% include event_beansheafclubrun.html %}
   </li>
 
   <li class="list-group-item">
-    <h3>Thursday 18th October 2018 : Beat your distance - Old Bath Road, Theale</h3>
+    <h3>Tuesday 18th October 2018 : Beat your distance - Old Bath Road, Theale</h3>
     <br> Meet at the     <a href="https://www.google.co.uk/maps/place/Beansheaf+Community+Centre/@51.438765,-1.050468,17z/data=!3m1!4b1!4m2!3m1!1s0x4876995b2055a6c3:0x5e5d81beae0b0b3b">Beansheaf Community Centre, RG31 7AW.</a>
 
     <br> OR
@@ -159,17 +141,12 @@
   </li>
 
   <li class="list-group-item">
-    <h3>Tuesday 23rd October 2018 : Club Run - Beansheaf</h3>
-    Meet at
-    <a href="https://www.google.co.uk/maps/place/Beansheaf+Community+Centre/@51.438765,-1.050468,17z/data=!3m1!4b1!4m2!3m1!1s0x4876995b2055a6c3:0x5e5d81beae0b0b3b">Beansheaf Community Centre, RG31 7AW.</a>
-    <br> Meet at 19:00 for 19:20 start
-    <br>
-    <br> Meet at the Beansheaf Community Centre as normal for a club run.
-    <br>
+    <h3>Thursday 23rd October 2018 : Club Run - Beansheaf</h3>
+    {% include event_beansheafclubrun.html %}
   </li>
 
   <li class="list-group-item">
-    <h3>Thursday 25th October 2018 : Three minute cycle - Prospect Park</h3>
+    <h3>Tuesday 25th October 2018 : Three minute cycle - Prospect Park</h3>
     <a href="https://www.google.co.uk/maps/place/Prospect+Park/@51.4482918,-1.0131572,16z/data=!4m2!3m1!1s0x48769bbdeb5b73e5:0xdd1dd918a5735bc">Prospect Park, Main car park, RG30 2ND.</a>
     <br> Meet at 19:00 for 19:20 start
     <br>
@@ -190,13 +167,7 @@
   </li>
 
   <li class="list-group-item">
-    <h3>Tuesday 30th October : Club Run - Prospect Park</h3>
-    Meet at
-    <a href="https://www.google.co.uk/maps/place/Prospect+Park/@51.4482918,-1.0131572,16z/data=!4m2!3m1!1s0x48769bbdeb5b73e5:0xdd1dd918a5735bc">Prospect Park, Main car park, RG30 2ND.</a>
-    <br> Meet at 19:00 for 19:20 start
-    <br>
-    <br> The club run will take place from Prospect Park on the last Tuesday of the month.
+    {% include event_prospectparkclubrun.html %}
   </li>
-
 
 </ul>
