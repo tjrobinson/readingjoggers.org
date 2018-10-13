@@ -1,6 +1,6 @@
 <div class="header-top">
   <div class="logo text-center">
-    <h1><a href="index.html">Reading Joggers</a></h1>
+    <h1><a routerLink="/">Reading Joggers</a></h1>
   </div>
   <div class="navigation">
     <div class="container">
@@ -15,12 +15,12 @@
         </div>
         <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="hvr-bounce-to-bottom"><a href="index.html">Home</a></li>
-            <li class="hvr-bounce-to-bottom"><a href="about.html">About</a></li>
-            <li class="hvr-bounce-to-bottom"><a href="events.html">Events</a></li>
-            <li class="hvr-bounce-to-bottom"><a href="gallery.html">Gallery</a></li>
-            <li class="hvr-bounce-to-bottom"><a href="kit.html">Club Kit</a></li>
-            <li class="hvr-bounce-to-bottom"><a href="contact.html">Contact Us</a></li>
+            <li class="hvr-bounce-to-bottom"><a routerLink="/index" routerLinkActive="active">Home</a></li>
+            <li class="hvr-bounce-to-bottom"><a routerLink="/about" routerLinkActive="active">About</a></li>
+            <li class="hvr-bounce-to-bottom"><a routerLink="/events" routerLinkActive="active">Events</a></li>
+            <li class="hvr-bounce-to-bottom"><a routerLink="/gallery" routerLinkActive="active">Gallery</a></li>
+            <li class="hvr-bounce-to-bottom"><a routerLink="/kit" routerLinkActive="active">Club Kit</a></li>
+            <li class="hvr-bounce-to-bottom"><a routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
           </ul>
           <div class="clearfix"></div>
         </div>
@@ -28,12 +28,12 @@
     </div>
   </div>
 </div>
-<div class="header-banner">
+<!-- <div class="header-banner">
   <div class="banner">
   </div>
-</div>
+</div> -->
 
-{{title}}
+<router-outlet></router-outlet>
 
 <div class="get-started">
   <div class="container">
