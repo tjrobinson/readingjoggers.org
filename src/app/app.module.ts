@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { EventsComponent } from './events/events.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -9,6 +8,9 @@ import { AboutComponent } from './about/about.component';
 import { KitComponent } from './kit/kit.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ContactComponent } from './contact/contact.component';
+import { SocialmediaComponent } from './socialmedia/socialmedia.component';
+import { WinterHandicapComponent } from './winter-handicap/winter-handicap.component';
 
 const appRoutes: Routes = [
   {
@@ -31,21 +33,42 @@ const appRoutes: Routes = [
   },
   {
     path: 'kit',
-    component: HomeComponent,
+    component: KitComponent,
     data: { title: 'Kit' },
     pathMatch: 'prefix'
   },
   {
     path: 'gallery',
-    component: HomeComponent,
+    component: GalleryComponent,
     data: { title: 'Gallery' },
     pathMatch: 'prefix'
   },
-  { path: '',
+  {
+    path: 'contact',
+    component: ContactComponent,
+    data: { title: 'Gallery' },
+    pathMatch: 'prefix'
+  },
+  {
+    path: 'socialmedia',
+    component: SocialmediaComponent,
+    data: { title: 'Social Media' },
+    pathMatch: 'prefix'
+  },
+  {
+    path: 'events.html',
+    redirectTo: '/events',
+    pathMatch: 'full'
+  },
+  {
+    path: '',
     redirectTo: '/home',
     pathMatch: 'full'
   },
-  { path: '**', component: PagenotfoundComponent }
+  {
+    path: '**',
+    component: PagenotfoundComponent
+  }
 ];
 
 @NgModule({
@@ -56,7 +79,10 @@ const appRoutes: Routes = [
     AboutComponent,
     KitComponent,
     GalleryComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    ContactComponent,
+    SocialmediaComponent,
+    WinterHandicapComponent
   ],
   imports: [
     BrowserModule,
@@ -68,4 +94,5 @@ const appRoutes: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

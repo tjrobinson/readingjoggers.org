@@ -1,3 +1,32 @@
-<p>
-  about works!
-</p>
+<div class="typrography">
+  <div class="container">
+    <h2 class="heading text-center">About Us</h2>
+    <div class="grid_3 grid_5">
+      <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+        <ul id="myTab" class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#AboutUs" id="AboutUs-tab" role="tab" data-toggle="tab" aria-controls="AboutUs" aria-expanded="true">About
+              Us
+            </a>
+          </li>
+          <li role="presentation" class="">
+            <a href="#" aria-expanded="false">|</a>
+          </li>
+          <li role="presentation" class="">
+            <a href="#TheCommittee" role="tab" id="STheCommittee-tab" data-toggle="tab" aria-controls="TheCommittee" aria-expanded="false">The
+              Committee
+            </a>
+          </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+          <div role="tabpanel" class="tab-pane fade active in" id="AboutUs" aria-labelledby="AboutUs-tab">
+            <!-- {% include about_aboutus.html %} -->
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="TheCommittee" aria-labelledby="TheCommittee-tab">
+            <!-- {% include about_thecommittee.html %} -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
