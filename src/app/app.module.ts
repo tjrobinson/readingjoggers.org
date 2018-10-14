@@ -20,6 +20,7 @@ import { SocialEventsComponent } from './events/social-events/social-events.comp
 import { ClubRunsAndTrainingComponent } from './events/club-runs-and-training/club-runs-and-training.component';
 import { SummerHandicapComponent } from './events/summer-handicap/summer-handicap.component';
 import { ClubChampionshipComponent } from './events/club-championship/club-championship.component';
+import { ImageBannerComponent } from './image-banner/image-banner.component';
 
 const appRoutes: Routes = [
   {
@@ -145,7 +146,8 @@ const appRoutes: Routes = [
     SocialEventsComponent,
     ClubRunsAndTrainingComponent,
     SummerHandicapComponent,
-    ClubChampionshipComponent
+    ClubChampionshipComponent,
+    ImageBannerComponent
   ],
   imports: [
     BrowserModule,
