@@ -13,7 +13,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ContactComponent } from './contact/contact.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { WinterHandicapComponent } from './events/winter-handicap/winter-handicap.component';
-import { TemplateComponent } from './template/template.component';
 import { CommitteeComponent } from './about/committee/committee.component';
 import { ContactSubmittedComponent } from './contact-submitted/contact-submitted.component';
 import { SocialEventsComponent } from './events/social-events/social-events.component';
@@ -22,6 +21,10 @@ import { SummerHandicapComponent } from './events/summer-handicap/summer-handica
 import { ClubChampionshipComponent } from './events/club-championship/club-championship.component';
 import { ImageBannerComponent } from './image-banner/image-banner.component';
 import { AboutUsComponent } from './about/about-us/about-us.component';
+import { FindUsComponent } from './find-us/find-us.component';
+import { ProspectParkComponent } from './find-us/prospect-park/prospect-park.component';
+import { BeansheafComponent } from './find-us/beansheaf/beansheaf.component';
+import { OtherLocationsComponent } from './find-us/other-locations/other-locations.component';
 
 const appRoutes: Routes = [
   {
@@ -62,6 +65,36 @@ const appRoutes: Routes = [
         path: 'social-events',
         component: SocialEventsComponent,
         data: { title: 'Social Events' },
+        pathMatch: 'prefix'
+      }
+    ]
+  },
+  {
+    path: 'find-us',
+    component: FindUsComponent,
+    data: { title: 'Find Us' },
+    children: [
+      {
+        path:'',
+        redirectTo: 'beansheaf',
+        pathMatch: 'full' 
+      },
+      {
+        path: 'beansheaf',
+        component: BeansheafComponent,
+        data: { title: 'Beansheaf' },
+        pathMatch: 'prefix'
+      },
+      {
+        path: 'prospect-park',
+        component: ProspectParkComponent,
+        data: { title: 'Prospect Park' },
+        pathMatch: 'prefix'
+      },
+      {
+        path: 'other-locations',
+        component: OtherLocationsComponent,
+        data: { title: 'Other Locations' },
         pathMatch: 'prefix'
       }
     ]
@@ -152,7 +185,6 @@ const appRoutes: Routes = [
     ContactComponent,
     SocialMediaComponent,
     WinterHandicapComponent,
-    TemplateComponent,
     CommitteeComponent,
     ContactSubmittedComponent,
     SocialEventsComponent,
@@ -160,7 +192,11 @@ const appRoutes: Routes = [
     SummerHandicapComponent,
     ClubChampionshipComponent,
     ImageBannerComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    FindUsComponent,
+    ProspectParkComponent,
+    BeansheafComponent,
+    OtherLocationsComponent
   ],
   imports: [
     BrowserModule,

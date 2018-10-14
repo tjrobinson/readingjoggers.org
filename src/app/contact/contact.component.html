@@ -1,67 +1,42 @@
-<script src="js/freecontactformvalidation.js"></script>
-<script>
-      required.add('Full_Name', 'NOT_EMPTY', 'Full Name');
-      required.add('Email_Address', 'EMAIL', 'Email Address');
-      required.add('Your_Message', 'NOT_EMPTY', 'Your Message');
-      required.add('AntiSpam', 'NOT_EMPTY', 'Anti-Spam Question');
-</script>
+<h2>Contact Us</h2>
 
-<!--contact-->
-<div class="contact">
-      <div class="container">
-            <h2 class="heading text-center">Contact Us</h2>
-            <div class="contact-form">
-                  <div class="col-md-6 contact-grid">
+<h3>Email</h3>
+<p><a href="mailto:info@readingjoggers.org">info@readingjoggers.org</a></p>
 
-                        <form name="freecontactform" method="post" action="php/freecontactformprocess.php" onsubmit="return validate.check(this)">
-                              <p class="your-para">Fields marked with <b> * </b> are mandatory.</p>
-                              <p class="your-para">Your Name * :</p>
-                              <input type="text" name="Full_Name" id="Full_Name" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
-                              <p class="your-para">Your Mail * :</p>
-                              <input type="text" name="Email_Address" id="Email_Address" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
-                              <p class="your-para">Contact Number :</p>
-                              <input type="text" name="Telephone_Number" id="Telephone_Number" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
-                              <p class="your-para">Your Message * :</p>
-                              <textarea cols="77" rows="3" name="Your_Message" id="Your_Message" onfocus="this.value='';" onblur="if (this.value == '') {this.value = '';}"></textarea>
-                              <p class="your-para">To help prevent automated spam, please answer this question</p>
-                              <p class="your-para"> Using only numbers, what is 2 + 3 &nbsp;
-                                    <input type="text" name="AntiSpam" id="AntiSpam" maxlength="1" style="width:40px"></p>
-                              <div class="send">
-                                    <input type="submit" value=" Submit Form ">
-                              </div>
-                        </form>
-                  </div>
+<h3>Social Media</h3>
+<p>You can reach us on Facebook, Twitter, Instagram, and more.</p>
+<p>See our <a routerLink="/social-media">Social Media</a> page for more details.</p>
 
-                  <div class="col-md-6 contact-in">
+<h2>Contact Us</h2>
+<form name="freecontactform" method="post" action="php/freecontactformprocess.php">
 
-                        <p class="sed-para">Address</p>
-                        <p>Beansheaf Community Centre</p>
-                        <p>Charrington Road</p>
-                        <p>Calcot</p>
-                        <p>Reading</p>
-                        <p>RG31 7AW</p>
-
-                        <p class="sed-para">e-mail</p>
-                        <p><a href="mailto:info@readingjoggers.org">info@readingjoggers.org</a></p>
-
-                        <p class="sed-para">Social Networks</p>
-                        <p>
-                              <a href="https://www.facebook.com/groups/334855819925566"> <img src="images/social_fb.png"
-                                          alt="facebook" /></a>
-                              &nbsp;
-                              <a href="https://twitter.com/ReadingJoggers"> <img src="images/social_tw.png" alt="twitter"
-                                    /></a>
-                        </p>
-                        <p>&nbsp;</p>
-                  </div>
-
-                  <div class="clearfix"> </div>
-            </div>
-
-            <h3 class="tittle">Find Us Here</h3>
-            <div class="map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.407840484714!2d-1.0535496033607377!3d51.43911740482792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x5e5d81beae0b0b3b!2sBeansheaf+Community+Centre!5e0!3m2!1sen!2suk!4v1445968576824"
-                        style="border:0"></iframe>
-            </div>
+      <div class="form-group">
+            <label for="Full_Name">Name</label>
+            <input type="text" class="form-control" id="Full_Name" placeholder="Enter your name" required>
       </div>
-</div>
+
+      <div class="form-group">
+            <label for="Email_Address">Email Address</label>
+            <input type="email" class="form-control" id="Email_Address" aria-describedby="emailHelp" placeholder="Enter email"
+                  required>
+      </div>
+
+      <div class="form-group">
+            <label for="Telephone_Number">Telephone Number (optional)</label>
+            <input type="text" class="form-control" id="Telephone_Number" placeholder="Enter your telephone number">
+      </div>
+
+      <div class="form-group">
+            <label for="Your_Message">Message</label>
+            <textarea class="form-control" id="Your_Message" required></textarea>
+      </div>
+
+      <div class="form-group">
+            <label for="AntiSpam"> Using only numbers, what is 2 + 3.</label>
+            <input type="text" maxlength="1" class="form-control" id="AntiSpam" aria-describedby="antiSpamHelp" required>
+            <small id="antiSpamHelp" class="form-text text-muted">To help prevent automated spam, please answer this
+                  question.</small>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+</form>

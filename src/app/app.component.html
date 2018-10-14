@@ -2,49 +2,83 @@
   <div class="row">
 
     <div class="col">
+      <img style="height: 90px" class="float-left pt-3" src="../images/abt.jpg" alt="Reading Joggers logo">
+    </div>
+    <div class="col">
+      <h1 class="text-center align-top text-uppercase"><a routerLink="/">Reading&nbsp;Joggers</a></h1>
+    </div>
+    <div class="col">
+      <img style="height: 90px" class="float-right pt-3" src="../images/abt.jpg" alt="Reading Joggers logo">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
 
-
-      <h1><a routerLink="/">Reading Joggers</a></h1>
-
-
-
-
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/home" >Home</a></li>
+            <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/home">Home</a></li>
             <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/about">About</a></li>
-            <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/events" >Events</a></li>
+            <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/events">Events</a></li>
             <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/gallery">Gallery</a></li>
             <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/kit">Club Kit</a></li>
             <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/contact">Contact Us</a></li>
+            <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/find-us">Find Us</a></li>
           </ul>
         </div>
       </nav>
-
-
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" style="min-height:0">
       <app-image-banner></app-image-banner>
+    </div>
+  </div>
 
-      <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+
+  <div class="row pt-3">
+    <div class="col">
+      <img src="../../images/banner_bottom.jpg" class="mw-100" />
+
+    </div>
+
+  </div>
 
 
+  <div class="row">
+
+    <div class="col">
 
 
-      
+      <footer>
 
-      
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+          <span class="navbar-text">
+            &copy; 2018 Reading Joggers
+          </span>
+          <div>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a class="nav-link" href="doc/Reading_Joggers_Privacy_Notice.pdf">Privacy Notice</a></li>
+              <li class="nav-item"><a href="https://twitter.com/ReadingJoggers"><img src="images/social_tw_black.png"
+                    alt="twitter" /></a></li>
+              <li class="nav-item"><a href="https://www.facebook.com/groups/ReadingJoggers"><img src="images/social_fb_black.png"
+                    alt="facebook" /></a></li>
+              <li class="nav-item"><a href="https://www.flickr.com/groups/readingjoggers"><img src="images/social_fl_black.png"
+                    alt="flickr" /></a></li>
+              <li class="nav-item"><a href="https://www.instagram.com/readingjoggers/"><img src="images/social_in_black.png"
+                    alt="instagram" /></a></li>
+              <li class="nav-item"><a href="mailto:info@readingjoggers.org"><img src="images/social_em_black.png" alt="email us" /></a></li>
+            </ul>
+          </div>
+        </nav>
+
+      </footer>
     </div>
   </div>
 </div>
-
-<footer class="footer">
-  <div class="container">
-    <p>&copy; 2018 Reading Joggers | <a href="doc/Reading_Joggers_Privacy_Notice.pdf">Privacy Notice</a> |
-      <a href="https://twitter.com/ReadingJoggers"><img src="images/social_tw_black.png" alt="twitter" /></a>
-      <a href="https://www.facebook.com/groups/ReadingJoggers"><img src="images/social_fb_black.png" alt="facebook" /></a>
-      <a href="https://www.flickr.com/groups/readingjoggers"><img src="images/social_fl_black.png" alt="flickr" /></a>
-      <a href="https://www.instagram.com/readingjoggers/"><img src="images/social_in_black.png" alt="instagram" /></a>
-      <a href="mailto:info@readingjoggers.org"><img src="images/social_em_black.png" alt="email us" /></a>
-    </p>
-  </div>
-</footer>
