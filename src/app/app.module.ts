@@ -1,15 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
-import { EventsComponent } from './events/events.component';
 import { RouterModule, Routes } from '@angular/router';
+
+import { AppComponent } from './app.component';
+
+import { EventsComponent } from './events/events.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { KitComponent } from './kit/kit.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactComponent } from './contact/contact.component';
-import { SocialmediaComponent } from './socialmedia/socialmedia.component';
+import { SocialMediaComponent } from './social-media/social-media.component';
 import { WinterHandicapComponent } from './events/winter-handicap/winter-handicap.component';
 import { TemplateComponent } from './template/template.component';
 import { CommitteeComponent } from './about/committee/committee.component';
@@ -94,22 +96,21 @@ const appRoutes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
-    data: { title: 'Gallery' },
+    data: { title: 'Contact' },
     pathMatch: 'prefix'
   },
   {
-    path: 'socialmedia',
-    component: SocialmediaComponent,
-    data: { title: 'Social Media' },
+    path: 'contact-submitted',
+    component: ContactSubmittedComponent,
+    data: { title: 'Contact' },
     pathMatch: 'prefix'
   },
   {
-    path: 'socialmedia',
-    component: SocialmediaComponent,
+    path: 'social-media',
+    component: SocialMediaComponent,
     data: { title: 'Social Media' },
     pathMatch: 'prefix'
   },
-  
   {
     path: 'events.html',
     redirectTo: '/events',
@@ -122,7 +123,7 @@ const appRoutes: Routes = [
   },
   {
     path: '**',
-    component: PagenotfoundComponent
+    component: PageNotFoundComponent
   }
 ];
 
@@ -134,9 +135,9 @@ const appRoutes: Routes = [
     AboutComponent,
     KitComponent,
     GalleryComponent,
-    PagenotfoundComponent,
+    PageNotFoundComponent,
     ContactComponent,
-    SocialmediaComponent,
+    SocialMediaComponent,
     WinterHandicapComponent,
     TemplateComponent,
     CommitteeComponent,
