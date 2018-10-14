@@ -22,20 +22,13 @@
               "src/favicon.ico",
               "src/docs",
               "src/images",
-              "src/css",
               "src/gallery",
               "src/js",
               "src/php"
             ],
-            "styles": [
-              "src/css/style.css",
-              "src/css/lightbox.css"
-            ],
+            "styles": [],
             "scripts": [
-              "src/js/freecontactformvalidation.js",
-              "src/js/jquery.magnific-popup.js",
-              "src/js/lightbox.js",
-              "src/js/responsiveslides.min.js"
+              "src/js/freecontactformvalidation.js"
             ]
           },
           "configurations": {

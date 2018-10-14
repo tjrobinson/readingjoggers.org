@@ -1,74 +1,14 @@
-<div class="typrography">
-  <div class="container">
-    <h2 class="heading text-center">About Us</h2>
-    <div class="grid_3 grid_5">
-      <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-        <ul id="myTab" class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active">
-            <a routerLink="/about" id="AboutUs-tab" role="tab" data-toggle="tab" aria-controls="AboutUs" aria-expanded="true">About
-              Us
-            </a>
-          </li>
-          <li role="presentation" class="">
-            <a href="#" aria-expanded="false">|</a>
-          </li>
-          <li role="presentation" class="">
-            <a routerLink="/about/committee" role="tab" id="STheCommittee-tab" data-toggle="tab" aria-controls="TheCommittee" aria-expanded="false">The
-              Committee
-            </a>
-          </li>
+<h2>About Us</h2>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/about">About Us</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="committee">Committee</a>
+            </li>
         </ul>
-        <div id="myTabContent" class="tab-content">
-          <div role="tabpanel" class="tab-pane fade active in" id="AboutUs" aria-labelledby="AboutUs-tab">
-            <div class="about-section">
-    <div class="about-top">
-        <div class="container">
-            <div class="col-md-6 abt-text">
-                <h3>Welcome to Reading Joggers.</h3>
-                <p>Reading Joggers is a small and friendly running club, formed in 1977 during the early years of the first
-                    jogging boom. We have about 150 active members ranging in age from 18 to 80. Just come along to the Beansheaf
-                    Community Centre, Charrington Road, Calcot, Reading RG31 7AW on a Tuesday or Thursday evening at 7:00
-                    PM where a warm welcome awaits you. We aim to leave for our runs about 7:20 PM.</p>
-                <p>Running keeps you fit, but there's no pressure from us to improve! It's sheer enjoyment that keeps us
-                    going! However we have summer and winter handicaps where we try ourselves out over a regular course and
-                    a consistency league for those who do wish to improve and for those that do we have a qualified UKA coach
-                    who runs coaching sessions and can offer guidance.</p>
-                <p>The club is affiliated to <a href="http://www.englandathletics.org/" target="_blank">England Athletics</a>,
-                    so your annual subscription (currently £26 of which £15 goes to England Athletics Registration) offers
-                    reduced cost of entry to many running events.</p>
-                <p>If you like running with us then please complete the <a href="https://tinyurl.com/RJ-Subscribe">online
-                        club membership form</a></p>
-                <p>If you'd like to know more just <a routerLink="contact"> email your query </a> to the club.</p>
-            </div>
-            <div class="col-md-6 abt-pic">
-                <img src="images/abt.jpg" alt="" />
-            </div>
-            <div class="clearfix"> </div>
-        </div>
     </div>
-
-    <div class="ministries-sec">
-        <div class="container">
-            <div class="col-md-6 what-do">
-                <h3>Activities</h3>
-                <ul>
-                    <li>Club social run every Tue at 7:20 pm.</li>
-                    <li>Training Session on Thur at 7:20 pm. <a routerLink="events">(see events page)</a></li>
-                    <li>Social runs arranged on most weekends.</li>
-                    <li>Consistency League which runs from April - March.</li>
-                    <li>Summer & Winter Handicap competition.</li>
-                    <li>Participate in local running events.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-          </div>
-          <div role="tabpanel" class="tab-pane fade" id="TheCommittee" aria-labelledby="TheCommittee-tab">
-            <!-- {% include about_thecommittee.html %} -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+</nav>
+<router-outlet></router-outlet>

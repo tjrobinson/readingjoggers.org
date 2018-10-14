@@ -21,6 +21,7 @@ import { ClubRunsAndTrainingComponent } from './events/club-runs-and-training/cl
 import { SummerHandicapComponent } from './events/summer-handicap/summer-handicap.component';
 import { ClubChampionshipComponent } from './events/club-championship/club-championship.component';
 import { ImageBannerComponent } from './image-banner/image-banner.component';
+import { AboutUsComponent } from './about/about-us/about-us.component';
 
 const appRoutes: Routes = [
   {
@@ -62,19 +63,30 @@ const appRoutes: Routes = [
         component: SocialEventsComponent,
         data: { title: 'Social Events' },
         pathMatch: 'prefix'
-      },
+      }
     ]
   },
   {
     path: 'about',
     component: AboutComponent,
     data: { title: 'About' },
-  },
-  {
-    path: 'about/committee',
-    component: CommitteeComponent,
-    data: { title: 'Committee' },
-    pathMatch: 'prefix'
+    children: [
+      {
+        path:'',
+        redirectTo: 'about-us',
+        pathMatch: 'full' 
+      },
+      {
+        path: 'about-us',
+        component: AboutUsComponent,
+        data: { title: 'About Us' },
+      },
+      {
+        path: 'committee',
+        component: CommitteeComponent,
+        data: { title: 'Committee' },
+      }
+    ]
   },
   {
     path: 'home',
@@ -147,7 +159,8 @@ const appRoutes: Routes = [
     ClubRunsAndTrainingComponent,
     SummerHandicapComponent,
     ClubChampionshipComponent,
-    ImageBannerComponent
+    ImageBannerComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
