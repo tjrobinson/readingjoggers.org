@@ -17,3 +17,16 @@ steps:
     npm install
     ng build --prod
   displayName: 'npm install and build'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifacts'
+  inputs:
+    ArtifactName: dist
+
+- task: FtpUpload@1
+  displayName: 'FTP Upload'
+  inputs:
+    serverEndpoint: 'Reading Joggers FTP Server'
+    rootDirectory: '$(Build.ArtifactStagingDirectory)'
+    remoteDirectory: /test
+    preservePaths: true
