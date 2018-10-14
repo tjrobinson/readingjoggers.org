@@ -5,48 +5,36 @@
       <h3>Events List</h3>
       <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
         <ul id="myTab" class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active">
-            <a href="#EventHome" id="EventHome-tab" role="tab" data-toggle="tab" aria-controls="EventHome" aria-expanded="true">Club
-              Runs & Training</a>
+          <li role="presentation" routerLinkActive="active">
+            <a routerLink="club-runs-and-training" id="EventHome-tab" role="tab" data-toggle="tab" aria-controls="EventHome" >Club
+              Runs &amp; Training</a>
           </li>
           <li role="presentation" class="">
             <a href="#" aria-expanded="false">|</a>
           </li>
-          <li role="presentation" class="">
-            <a href="#SummerHandicap" role="tab" id="SummerHandicap-tab" data-toggle="tab" aria-controls="SummerHandicap" aria-expanded="false">Summer
+          <li role="presentation" routerLinkActive="active">
+            <a routerLink="summer-handicap" role="tab" id="SummerHandicap-tab" data-toggle="tab" aria-controls="SummerHandicap" routerLinkActive="active">Summer
               Handicap</a>
           </li>
           <li role="presentation" class=""><a href="#" aria-expanded="false">|</a></li>
-          <li role="presentation" class="">
-            <a href="#WinterHandicap" role="tab" id="WinterHandicap-tab" data-toggle="tab" aria-controls="WinterHandicap" aria-expanded="false">Winter
+          <li role="presentation" routerLinkActive="active">
+            <a routerLink="winter-handicap" role="tab" id="WinterHandicap-tab" data-toggle="tab" aria-controls="WinterHandicap" routerLinkActive="active">Winter
               Handicap</a>
           </li>
           <li role="presentation" class="">
             <a href="#" aria-expanded="false">|</a>
           </li>
-          <li role="presentation" class=""><a href="#EventChamp" role="tab" id="EventChamp-tab" data-toggle="tab" aria-controls="EventChamp"
+          <li role="presentation" routerLinkActive="active"><a routerLink="club-championship" role="tab" id="EventChamp-tab" data-toggle="tab" aria-controls="EventChamp"
               aria-expanded="false">Club Championship</a></li>
           <li role="presentation" class=""><a href="#" aria-expanded="false">|</a></li>
-          <li role="presentation" class="">
-            <a href="#EventSocial" role="tab" id="EventSocial-tab" data-toggle="tab" aria-controls="EventSocial" aria-expanded="false">Social
+          <li role="presentation" routerLinkActive="active">
+            <a routerLink="social-events" role="tab" id="EventSocial-tab" data-toggle="tab" aria-controls="EventSocial" routerLinkActive="active">Social
               Events</a>
           </li>
         </ul>
         <div id="myTabContent" class="tab-content">
           <div role="tabpanel" class="tab-pane fade active in" id="EventHome" aria-labelledby="EventHome-tab">
-            <!-- {% include events_clubrunsandtraining.html %} -->
-          </div>
-          <div role="tabpanel" class="tab-pane fade" id="SummerHandicap" aria-labelledby="SummerHandicap-tab">
-            <!-- {% include events_summerhandicap.html %} -->
-          </div>
-          <div role="tabpanel" class="tab-pane fade" id="WinterHandicap" aria-labelledby="WinterHandicap-tab">
-            <!-- {% include events_winterhandicap.html %} -->
-          </div>
-          <div role="tabpanel" class="tab-pane fade" id="EventChamp" aria-labelledby="EventChamp-tab">
-            <!-- {% include events_clubchampionship.html %} -->
-          </div>
-          <div role="tabpanel" class="tab-pane fade" id="EventSocial" aria-labelledby="EventSocial-tab">
-            <!-- {% include events_socialevents.html %} -->
+            <router-outlet></router-outlet>
           </div>
         </div>
       </div>

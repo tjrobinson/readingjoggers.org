@@ -1,6 +1,10 @@
-# Readingjoggers
+# Reading Joggers Public Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
+https://www.readingjoggers.org/
+
+## Build Status
+
+[![Build status](https://tjrobinsonuk.visualstudio.com/Reading%20Joggers/_apis/build/status/Reading%20Joggers)](https://tjrobinsonuk.visualstudio.com/Reading%20Joggers/_build/latest?definitionId=1)
 
 ## Development server
 

@@ -10,19 +10,67 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ContactComponent } from './contact/contact.component';
 import { SocialmediaComponent } from './socialmedia/socialmedia.component';
-import { WinterHandicapComponent } from './winter-handicap/winter-handicap.component';
+import { WinterHandicapComponent } from './events/winter-handicap/winter-handicap.component';
+import { TemplateComponent } from './template/template.component';
+import { CommitteeComponent } from './about/committee/committee.component';
+import { ContactSubmittedComponent } from './contact-submitted/contact-submitted.component';
+import { SocialEventsComponent } from './events/social-events/social-events.component';
+import { ClubRunsAndTrainingComponent } from './events/club-runs-and-training/club-runs-and-training.component';
+import { SummerHandicapComponent } from './events/summer-handicap/summer-handicap.component';
+import { ClubChampionshipComponent } from './events/club-championship/club-championship.component';
 
 const appRoutes: Routes = [
   {
     path: 'events',
     component: EventsComponent,
     data: { title: 'Events' },
-    pathMatch: 'prefix'
+    children: [
+      {
+        path:'',
+        redirectTo: 'club-runs-and-training',
+        pathMatch: 'full' 
+      },
+      {
+        path: 'winter-handicap',
+        component: WinterHandicapComponent,
+        data: { title: 'Winter Handicap' },
+        pathMatch: 'prefix'
+      },
+      {
+        path: 'summer-handicap',
+        component: SummerHandicapComponent,
+        data: { title: 'Summer Handicap' },
+        pathMatch: 'prefix'
+      },
+      {
+        path: 'club-runs-and-training',
+        component: ClubRunsAndTrainingComponent,
+        data: { title: 'Club Runs & Training' },
+        pathMatch: 'prefix'
+      },
+      {
+        path: 'club-championship',
+        component: ClubChampionshipComponent,
+        data: { title: 'Club Championship' },
+        pathMatch: 'prefix'
+      },
+      {
+        path: 'social-events',
+        component: SocialEventsComponent,
+        data: { title: 'Social Events' },
+        pathMatch: 'prefix'
+      },
+    ]
   },
   {
     path: 'about',
     component: AboutComponent,
     data: { title: 'About' },
+  },
+  {
+    path: 'about/committee',
+    component: CommitteeComponent,
+    data: { title: 'Committee' },
     pathMatch: 'prefix'
   },
   {
@@ -56,6 +104,13 @@ const appRoutes: Routes = [
     pathMatch: 'prefix'
   },
   {
+    path: 'socialmedia',
+    component: SocialmediaComponent,
+    data: { title: 'Social Media' },
+    pathMatch: 'prefix'
+  },
+  
+  {
     path: 'events.html',
     redirectTo: '/events',
     pathMatch: 'full'
@@ -82,7 +137,14 @@ const appRoutes: Routes = [
     PagenotfoundComponent,
     ContactComponent,
     SocialmediaComponent,
-    WinterHandicapComponent
+    WinterHandicapComponent,
+    TemplateComponent,
+    CommitteeComponent,
+    ContactSubmittedComponent,
+    SocialEventsComponent,
+    ClubRunsAndTrainingComponent,
+    SummerHandicapComponent,
+    ClubChampionshipComponent
   ],
   imports: [
     BrowserModule,
