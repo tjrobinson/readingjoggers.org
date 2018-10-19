@@ -28,7 +28,8 @@
               "src/images",
               "src/gallery",
               "src/js",
-              "src/php"
+              "src/php",
+              "src/.well-known"
             ],
             "styles": [
               "src/styles.scss"
