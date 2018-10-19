@@ -8,3 +8,18 @@ allow from all
 </Files>
 
 deny from 188.143.232.0/24
+
+# X-XSS-Protection
+<IfModule mod_headers.c>
+	Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# X-Frame-Options
+<IfModule mod_headers.c>
+	Header always append X-Frame-Options SAMEORIGIN
+</IfModule>
+
+# X-Content-Type nosniff
+<IfModule mod_headers.c>
+	Header set X-Content-Type-Options nosniff
+</IfModule>
