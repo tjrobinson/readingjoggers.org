@@ -1,7 +1,7 @@
 // Bootstrap variable overrides
 $blue: #202E96;
 
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "./../node_modules/bootstrap/scss/bootstrap";
 
 h2 {
     margin-top:2rem !important;
