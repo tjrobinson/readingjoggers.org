@@ -1,28 +1,11 @@
 <?php
-/**
- * 
- * URL: www.freecontactform.com
- * 
- * Version: FreeContactForm Free V2.2
- * 
- * Copyright (c) 2013 Stuart Cochrane
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- * 
- * 
- * Note: This is NOT the same code as the PRO version
- * 
- */
+
+$email_to = "tom@tjrobinson.net";
+$email_subject = "RJ Web Message ";
+$thankyou = "../contact-submitted";
+$antispam_answer = "5";
 
 if(isset($_POST['Email_Address'])) {
-	
-	include 'freecontactformsettings.php';
 	
 	function died($error) {
 		echo "Sorry, but there were error(s) found with the form you submitted. ";

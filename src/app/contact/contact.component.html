@@ -8,35 +8,52 @@
 <p>See our <a routerLink="/social-media">Social Media</a> page for more details.</p>
 
 <h2>Contact Us</h2>
-<form name="freecontactform" method="post" action="php/freecontactformprocess.php">
+
+<form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
 
       <div class="form-group">
-            <label for="Full_Name">Name</label>
-            <input type="text" class="form-control" id="Full_Name" placeholder="Enter your name" required>
+            <label for="name">Name</label>
+            <input [(ngModel)]="model.name" type="text" class="form-control" name="name" #name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && name.invalid }" required>
+            <div *ngIf="f.submitted && name.invalid" class="invalid-feedback">
+                  <div *ngIf="name.errors.required">Your name is required</div>
+              </div>
       </div>
 
       <div class="form-group">
-            <label for="Email_Address">Email Address</label>
-            <input type="email" class="form-control" id="Email_Address" aria-describedby="emailHelp" placeholder="Enter email"
-                  required>
+            <label for="email">Email Address</label>
+            <input [(ngModel)]="model.email" type="email" class="form-control" name="email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
+            <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                  <div *ngIf="email.errors.required">Email is required</div>
+                  <div *ngIf="email.errors.email">Email must be a valid email address</div>
+              </div>
       </div>
 
       <div class="form-group">
-            <label for="Telephone_Number">Telephone Number (optional)</label>
-            <input type="text" class="form-control" id="Telephone_Number" placeholder="Enter your telephone number">
+            <label for="phoneNumber">Phone Number (optional)</label>
+            <input [(ngModel)]="model.phoneNumber" type="text" class="form-control" name="phoneNumber" #phoneNumber="ngModel" [ngClass]="{ 'is-invalid': f.submitted && phoneNumber.invalid }">
+            <div *ngIf="f.submitted && phoneNumber.invalid" class="invalid-feedback">
+              </div>
       </div>
 
       <div class="form-group">
-            <label for="Your_Message">Message</label>
-            <textarea class="form-control" id="Your_Message" required></textarea>
+            <label for="message">Message</label>
+            <textarea [(ngModel)]="model.message" class="form-control" name="message" #message="ngModel"  [ngClass]="{ 'is-invalid': f.submitted && message.invalid }" required></textarea>
+            <div *ngIf="f.submitted && message.invalid" class="invalid-feedback">
+                  <div *ngIf="message.errors.required">A message is required</div>
+              </div>
       </div>
 
       <div class="form-group">
-            <label for="AntiSpam"> Using only numbers, what is 2 + 3.</label>
-            <input type="text" maxlength="1" class="form-control" id="AntiSpam" aria-describedby="antiSpamHelp" required>
+            <label for="antiSpam"> Using only numbers, what is 2 + 3.</label>
+            <input [(ngModel)]="model.antiSpam" type="text" maxlength="1" class="form-control" name="antiSpam" #antiSpam="ngModel"  [ngClass]="{ 'is-invalid': f.submitted && antiSpam.invalid }" required>
+            <div *ngIf="f.submitted && antiSpam.invalid" class="invalid-feedback">
+                  <div *ngIf="antiSpam.errors.required">Anti-spam answer is required</div>
+              </div>
             <small id="antiSpamHelp" class="form-text text-muted">To help prevent automated spam, please answer this
                   question.</small>
       </div>
 
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <div class="form-group">
+            <button class="btn btn-primary">Register</button>
+        </div>
 </form>
