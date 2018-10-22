@@ -28,6 +28,10 @@ import { ProspectParkComponent } from './find-us/prospect-park/prospect-park.com
 import { BeansheafComponent } from './find-us/beansheaf/beansheaf.component';
 import { OtherLocationsComponent } from './find-us/other-locations/other-locations.component';
 
+import 'jquery';
+import 'popper';
+import 'bootstrap';
+
 const appRoutes: Routes = [
   {
     path: 'events',
