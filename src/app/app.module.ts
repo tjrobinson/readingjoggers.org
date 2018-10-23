@@ -29,7 +29,7 @@ import { BeansheafComponent } from './find-us/beansheaf/beansheaf.component';
 import { OtherLocationsComponent } from './find-us/other-locations/other-locations.component';
 
 import 'jquery';
-import 'popper';
+import 'popper.js';
 import 'bootstrap';
 
 const appRoutes: Routes = [
@@ -41,7 +41,7 @@ const appRoutes: Routes = [
       {
         path:'',
         redirectTo: 'club-runs-and-training',
-        pathMatch: 'full' 
+        pathMatch: 'full'
       },
       {
         path: 'winter-handicap',
@@ -83,7 +83,7 @@ const appRoutes: Routes = [
       {
         path:'',
         redirectTo: 'beansheaf',
-        pathMatch: 'full' 
+        pathMatch: 'full'
       },
       {
         path: 'beansheaf',
@@ -113,7 +113,7 @@ const appRoutes: Routes = [
       {
         path:'',
         redirectTo: 'about-us',
-        pathMatch: 'full' 
+        pathMatch: 'full'
       },
       {
         path: 'about-us',
