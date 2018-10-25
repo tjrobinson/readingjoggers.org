@@ -1,0 +1,24 @@
+
+$blue: #1E3092;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+h1 {
+    font-family: "Oswald", sans-serif;
+	text-decoration: none;
+    letter-spacing: 2px;
+    font-size: $font-size-base * 2;
+	color: #00048A;
+}
+
+h1 a {
+	color: #00048A;
+}
+
+
+@include media-breakpoint-up(sm) {
+    h1 {
+        font-size: $font-size-base * 5;
+    }
+  }

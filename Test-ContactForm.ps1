@@ -1,0 +1,2 @@
+﻿$postParams = @{username='me';moredata='qwerty'}
+Invoke-WebRequest -Uri "https://prod-04.uksouth.logic.azure.com:443/workflows/e1c01b33912e4f8ca729072313637c50/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=FGB7H-Jou3seTn__qlfPEjOqim_n_KD_z2Rw8kIbWfo" -Method POST -Body $postParams

@@ -17,3 +17,9 @@ steps:
     npm install
     ng build --prod
   displayName: 'npm install and build'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifacts'
+  inputs:
+    PathtoPublish: 'dist'
+    ArtifactName: dist
