@@ -1,29 +1,21 @@
-RewriteEngine On
+<IfModule mod_rewrite.c>
+RewriteEngine On  
+
+# Prevent the server from trying to show a directory listing when you hit /gallery
+RewriteCond %{REQUEST_URI} /gallery/
+RewriteRule ^ /index.html [L]
 
 # If an existing asset or directory is requested go to it as it is
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
 RewriteRule ^ - [L]
 
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}/index.html
+# If the requested resource doesn't exist, use index.html
+RewriteRule ^ /index.html
+</IfModule>
 
-<Files 403.shtml>
-order allow,deny
-allow from all
-</Files>
-
-# X-XSS-Protection
 <IfModule mod_headers.c>
 	Header set X-XSS-Protection "1; mode=block"
-</IfModule>
-
-# X-Frame-Options
-<IfModule mod_headers.c>
 	Header always append X-Frame-Options SAMEORIGIN
-</IfModule>
-
-# X-Content-Type nosniff
-<IfModule mod_headers.c>
 	Header set X-Content-Type-Options nosniff
 </IfModule>

@@ -28,8 +28,8 @@
               "src/images",
               "src/gallery",
               "src/js",
-              "src/php",
-              "src/.well-known"
+              "src/.well-known",
+              "src/.htaccess"
             ],
             "styles": [
               "src/styles.scss"
