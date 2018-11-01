@@ -6,8 +6,8 @@ RewriteCond %{THE_REQUEST} \.html
 RewriteRule ^(.*)\.html$ /$1 [R=301,L]
 
 # Prevent the server from trying to show a directory listing when you hit /gallery
-RewriteCond %{REQUEST_URI} /gallery/
-RewriteRule ^ /index.html [L]
+#RewriteCond %{REQUEST_URI} /gallery/
+#RewriteRule ^ /index.html [L]
 
 # If an existing asset or directory is requested go to it as it is
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
