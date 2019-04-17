@@ -14,7 +14,6 @@ import { KitComponent } from './kit/kit.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactComponent } from './contact/contact.component';
-import { SocialMediaComponent } from './social-media/social-media.component';
 import { WinterHandicapComponent } from './events/winter-handicap/winter-handicap.component';
 import { CommitteeComponent } from './about/committee/committee.component';
 import { ContactSubmittedComponent } from './contact-submitted/contact-submitted.component';
@@ -178,12 +177,6 @@ const appRoutes: Routes = [
     pathMatch: 'prefix'
   },
   {
-    path: 'social-media',
-    component: SocialMediaComponent,
-    data: { title: 'Social Media' },
-    pathMatch: 'prefix'
-  },
-  {
     path: 'events.html',
     redirectTo: '/events',
     pathMatch: 'full'
@@ -209,7 +202,6 @@ const appRoutes: Routes = [
     GalleryComponent,
     PageNotFoundComponent,
     ContactComponent,
-    SocialMediaComponent,
     WinterHandicapComponent,
     CommitteeComponent,
     ContactSubmittedComponent,

@@ -4,56 +4,162 @@
 <p><a href="mailto:info@readingjoggers.org">info@readingjoggers.org</a></p>
 
 <h3>Social Media</h3>
-<p>You can reach us on Facebook, Twitter, Instagram, and more.</p>
-<p>See our <a routerLink="/social-media">Social Media</a> page for more details.</p>
 
-<h2>Contact Us</h2>
-
-<form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
-
-      <div class="form-group">
-            <label for="name">Name</label>
-            <input [(ngModel)]="model.name" type="text" class="form-control" name="name" #name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && name.invalid }" required>
-            <div *ngIf="f.submitted && name.invalid" class="invalid-feedback">
-                  <div *ngIf="name.errors.required">Your name is required</div>
-              </div>
-      </div>
-
-      <div class="form-group">
-            <label for="email">Email Address</label>
-            <input [(ngModel)]="model.email" type="email" class="form-control" name="email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
-            <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
-                  <div *ngIf="email.errors.required">Email is required</div>
-                  <div *ngIf="email.errors.email">Email must be a valid email address</div>
-              </div>
-      </div>
-
-      <div class="form-group">
-            <label for="phoneNumber">Phone Number (optional)</label>
-            <input [(ngModel)]="model.phoneNumber" type="text" class="form-control" name="phoneNumber" #phoneNumber="ngModel" [ngClass]="{ 'is-invalid': f.submitted && phoneNumber.invalid }">
-            <div *ngIf="f.submitted && phoneNumber.invalid" class="invalid-feedback">
-              </div>
-      </div>
-
-      <div class="form-group">
-            <label for="message">Message</label>
-            <textarea [(ngModel)]="model.message" class="form-control" name="message" #message="ngModel"  [ngClass]="{ 'is-invalid': f.submitted && message.invalid }" required></textarea>
-            <div *ngIf="f.submitted && message.invalid" class="invalid-feedback">
-                  <div *ngIf="message.errors.required">A message is required</div>
-              </div>
-      </div>
-
-      <div class="form-group">
-            <label for="antiSpam"> Using only numbers, what is 2 + 3.</label>
-            <input [(ngModel)]="model.antiSpam" type="text" maxlength="1" class="form-control" name="antiSpam" #antiSpam="ngModel"  [ngClass]="{ 'is-invalid': f.submitted && antiSpam.invalid }" required>
-            <div *ngIf="f.submitted && antiSpam.invalid" class="invalid-feedback">
-                  <div *ngIf="antiSpam.errors.required">Anti-spam answer is required</div>
-              </div>
-            <small id="antiSpamHelp" class="form-text text-muted">To help prevent automated spam, please answer this
-                  question.</small>
-      </div>
-
-      <div class="form-group">
-            <button class="btn btn-primary">Register</button>
+<div class="row">
+  <div class="col">
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><a
+            href="https://www.facebook.com/groups/ReadingJoggers">Facebook</a></h5>
+          <p class="card-text">
+            Join our Facebook group (members only)
+          </p>
         </div>
+        <div class="card-footer">
+          <a
+            href="https://www.facebook.com/groups/ReadingJoggers"
+            class="btn btn-primary"
+            >Join Us</a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><a href="https://twitter.com/ReadingJoggers">Twitter</a></h5>
+          <p class="card-text">Follow Us</p>
+        </div>
+        <div class="card-footer">
+          <a href="https://twitter.com/ReadingJoggers" class="btn btn-primary" v
+            >Follow Us</a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a
+            href="https://www.instagram.com/readingjoggers/">Instagram</a>
+          </h5>
+          <p class="card-text">Follow us on Instagram</p>
+        </div>
+        <div class="card-footer">
+          <a
+            href="https://www.instagram.com/readingjoggers/"
+            class="btn btn-primary"
+            >Follow Us</a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><a href="https://www.strava.com/clubs/30734">Strava</a></h5>
+          <p class="card-text">Join our Strava club (members only)</p>
+        </div>
+        <div class="card-footer">
+          <a href="https://www.strava.com/clubs/30734" class="btn btn-primary"
+            >Join Us</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Contact Form</h2>
+
+<form
+  name="form"
+  (ngSubmit)="f.form.valid && onSubmit()"
+  #f="ngForm"
+  novalidate
+>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input
+      [(ngModel)]="model.name"
+      type="text"
+      class="form-control"
+      name="name"
+      #name="ngModel"
+      [ngClass]="{ 'is-invalid': f.submitted && name.invalid }"
+      required
+    />
+    <div *ngIf="f.submitted && name.invalid" class="invalid-feedback">
+      <div *ngIf="name.errors.required">Your name is required</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input
+      [(ngModel)]="model.email"
+      type="email"
+      class="form-control"
+      name="email"
+      #email="ngModel"
+      [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
+      required
+      email
+    />
+    <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+      <div *ngIf="email.errors.required">Email is required</div>
+      <div *ngIf="email.errors.email">Email must be a valid email address</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="phoneNumber">Phone Number (optional)</label>
+    <input
+      [(ngModel)]="model.phoneNumber"
+      type="text"
+      class="form-control"
+      name="phoneNumber"
+      #phoneNumber="ngModel"
+      [ngClass]="{ 'is-invalid': f.submitted && phoneNumber.invalid }"
+    />
+    <div
+      *ngIf="f.submitted && phoneNumber.invalid"
+      class="invalid-feedback"
+    ></div>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea
+      [(ngModel)]="model.message"
+      class="form-control"
+      name="message"
+      #message="ngModel"
+      [ngClass]="{ 'is-invalid': f.submitted && message.invalid }"
+      required
+    ></textarea>
+    <div *ngIf="f.submitted && message.invalid" class="invalid-feedback">
+      <div *ngIf="message.errors.required">A message is required</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="antiSpam"> Using only numbers, what is 2 + 3.</label>
+    <input
+      [(ngModel)]="model.antiSpam"
+      type="text"
+      maxlength="1"
+      class="form-control"
+      name="antiSpam"
+      #antiSpam="ngModel"
+      [ngClass]="{ 'is-invalid': f.submitted && antiSpam.invalid }"
+      required
+    />
+    <div *ngIf="f.submitted && antiSpam.invalid" class="invalid-feedback">
+      <div *ngIf="antiSpam.errors.required">Anti-spam answer is required</div>
+    </div>
+    <small id="antiSpamHelp" class="form-text text-muted"
+      >To help prevent automated spam, please answer this question.</small
+    >
+  </div>
+
+  <div class="form-group">
+    <button class="btn btn-primary">Send</button>
+  </div>
 </form>

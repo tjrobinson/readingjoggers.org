@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-kit',
-  templateUrl: './kit.component.html',
-  styleUrls: ['./kit.component.scss']
+  templateUrl: './kit.component.html'
 })
 export class KitComponent implements OnInit {
 

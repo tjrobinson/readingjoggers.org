@@ -3,8 +3,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-image-banner',
-  templateUrl: './image-banner.component.html',
-  styleUrls: ['./image-banner.component.scss']
+  templateUrl: './image-banner.component.html'
 })
 export class ImageBannerComponent implements OnInit {
 
