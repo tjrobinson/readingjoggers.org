@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms'
+import { MarkdownModule } from 'ngx-markdown';
 
 import { AppComponent } from './app.component';
 
@@ -27,6 +28,8 @@ import { FindUsComponent } from './find-us/find-us.component';
 import { ProspectParkComponent } from './find-us/prospect-park/prospect-park.component';
 import { BeansheafComponent } from './find-us/beansheaf/beansheaf.component';
 import { OtherLocationsComponent } from './find-us/other-locations/other-locations.component';
+import { NewsComponent } from './news/news.component';
+import { AgmMinutesComponent } from './news/2019-04-10-agm-minutes/2019-04-10-agm-minutes.component';
 
 import 'jquery';
 import 'popper.js';
@@ -128,6 +131,23 @@ const appRoutes: Routes = [
     ]
   },
   {
+    path: 'news',
+    component: NewsComponent,
+    data: { title: 'News' },
+    children: [
+      {
+        path:'',
+        redirectTo: '2019-04-10-agm-minutes',
+        pathMatch: 'full'
+      },
+      {
+        path: '2019-04-10-agm-minutes',
+        component: AgmMinutesComponent,
+        data: { title: '2019-04-10-agm-minutes' },
+      },
+    ]
+  },
+  {
     path: 'home',
     component: HomeComponent,
     data: { title: 'Home' },
@@ -202,7 +222,9 @@ const appRoutes: Routes = [
     FindUsComponent,
     ProspectParkComponent,
     BeansheafComponent,
-    OtherLocationsComponent
+    OtherLocationsComponent,
+    NewsComponent,
+    AgmMinutesComponent
   ],
   imports: [
     BrowserModule,
@@ -214,7 +236,8 @@ const appRoutes: Routes = [
       } 
     ),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MarkdownModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -28,12 +28,15 @@
               "src/images",
               "src/js",
               "src/.well-known",
-              "src/.htaccess"
+              "src/.htaccess",
+              { "glob": "**/*.md", "input": "src/app", "output": "/" }
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/marked/lib/marked.js"
+            ]
           },
           "configurations": {
             "production": {
