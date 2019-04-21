@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ event.title }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">
+      {{ event.date }}, {{ event.time }}
+    </h6>
+    <div [ngSwitch]="event.location">
+        <p *ngSwitchCase="'beansheaf'">
+          Meet at
+          <a routerLink="/find-us/beansheaf">Beansheaf Community Centre</a>.
+        </p>
+        <p *ngSwitchCase="'prospect-park'">
+          Meet at
+          <a routerLink="/find-us/prospect-park">Prospect Park</a>.
+        </p>
+        <p *ngSwitchCase="'theale'">
+          Meet at
+          <a routerLink="/find-us/beansheaf">Beansheaf Community Centre</a>
+          (allowing enough time to run to Theale) or
+          <a routerLink="/find-us/theale">Theale</a>.
+        </p>
+      </div>
+    <div markdown [src]="descriptionTemplateUrl"></div>
+  </div>
+</div>

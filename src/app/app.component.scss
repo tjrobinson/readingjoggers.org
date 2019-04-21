@@ -1,8 +1,6 @@
-
 $blue: #1E3092;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
-
 
 h1 {
     font-family: "Oswald", sans-serif;
@@ -15,7 +13,6 @@ h1 {
 h1 a {
 	color: #00048A;
 }
-
 
 @include media-breakpoint-up(sm) {
     h1 {
