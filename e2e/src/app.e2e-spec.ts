@@ -9,6 +9,6 @@ describe('home page', () => {
 
   it('should display title', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('READING JOGGERS');
+    expect(page.getTitle()).toEqual('READING JOGGERS');
   });
 });
