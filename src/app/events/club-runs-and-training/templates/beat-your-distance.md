@@ -1,8 +1,4 @@
-Meet at
-<a routerLink="/find-us/beansheaf">Beansheaf Community Centre</a> or
-<a routerLink="/find-us/theale">Theale</a>.
-  
- This session will be on the old A4 at Theale. It is well lit.
+This session will be on the old A4 at Theale. It is well lit.
   
  1. You can go over the junction 12 motorway roundabout, towards the Theale
 bypass, and turn right at the next roundabout towards Theale. At the

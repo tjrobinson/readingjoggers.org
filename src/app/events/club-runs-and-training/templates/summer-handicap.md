@@ -1,4 +1,4 @@
-Tonight is the second of this seasons (33rd) Summer Handicaps - This one is 5 miles.
+Tonight is the third of this seasons (33rd) Summer Handicaps - This one is 5 miles.
 
 For those new to the summer handicap, the course is clearly marked and if you turn up early enough there will also be a map for you to look at.
 
