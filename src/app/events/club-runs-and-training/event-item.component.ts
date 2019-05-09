@@ -14,7 +14,7 @@ export class EventItemComponent implements OnInit {
 
     this.formattedDate = format(this.event.date, "dddd Do MMMM YYYY")
 
-    this.descriptionTemplateUrl = './events/club-runs-and-training/templates/' + this.event.descriptionTemplate + '.md';
+    this.descriptionTemplateUrl = './data/events/templates/' + this.event.descriptionTemplate + '.md';
   }
 
   @Input() event: IEvent;
