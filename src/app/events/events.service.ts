@@ -18,7 +18,7 @@ export class EventsService {
         date: new Date("2019-05-09"),
         time: "7pm for a 7:20pm start",
         title: "Beat your distance @ Beansheaf",
-        descriptionTemplate: "beat-your-distance",
+        descriptionTemplate: "beat-your-distance-beansheaf",
         location: "beansheaf"
       },
       {
