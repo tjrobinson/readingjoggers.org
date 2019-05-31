@@ -8,13 +8,6 @@ export class EventsService {
   getEvents = () => {
     return <IEvent[]>[
       {
-        date: new Date("2019-05-30"),
-        time: "7pm for a 7:20pm start",
-        title: "Kenyan Hills @ Prospect Park",
-        descriptionTemplate: "kenyan-hills",
-        location: "prospect-park"
-      },
-      {
         date: new Date("2019-06-04"),
         time: "7pm for a 7:20pm start",
         title: "Club run @ Beansheaf",
@@ -36,6 +29,13 @@ export class EventsService {
         location: "beansheaf"
       },
       {
+        date: new Date("2019-06-13"),
+        time: "7pm for a 7:20pm start",
+        title: "Training @ TBC",
+        descriptionTemplate: "tbc",
+        location: "tbc"
+      },
+      {
         date: new Date("2019-06-18"),
         time: "7pm for a 7:20pm start",
         title: "Club run @ Beansheaf",
@@ -43,12 +43,26 @@ export class EventsService {
         location: "beansheaf"
       },
       {
+        date: new Date("2019-06-20"),
+        time: "7pm for a 7:20pm start",
+        title: "Training @ TBC",
+        descriptionTemplate: "tbc",
+        location: "tbc"
+      },
+      {
         date: new Date("2019-06-25"),
         time: "7pm for a 7:20pm start",
         title: "Club run @ Prospect Park",
         descriptionTemplate: "club-run-prospect-park",
         location: "prospect-park"
-      }
+      },
+      {
+        date: new Date("2019-06-27"),
+        time: "7pm for a 7:20pm start",
+        title: "Training @ TBC",
+        descriptionTemplate: "tbc",
+        location: "tbc"
+      },
     ];
   };
 }
