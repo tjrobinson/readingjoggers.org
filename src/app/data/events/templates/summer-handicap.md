@@ -1,5 +1,3 @@
-Tonight is the fourth of this seasons (33rd) Summer Handicaps - This one is 5 miles.
-
 For those new to the summer handicap, the course is clearly marked and if you turn up early enough there will also be a map for you to look at.
 
 Meet at the main car park in Prospect Park at 7:00pm for the first runner to be away by 19:20pm.
