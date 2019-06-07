@@ -117,7 +117,7 @@ export class EventsService {
       {
         date: new Date("2019-07-30"),
         time: "7pm for a 7:20pm start",
-        title: "Club run @ Beansheaf",
+        title: "Club run @ Prospect Park",
         descriptionTemplate: "club-run-prospect-park",
         location: "prospect-park"
       }
