@@ -1,0 +1,1 @@
+terraform import azurerm_resource_group.readingjoggers subscriptions/67329470-fec1-4df3-af50-9823151ba40f/resourceGroups/readingjoggers
