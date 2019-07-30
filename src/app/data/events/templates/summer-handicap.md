@@ -2,6 +2,4 @@ For those new to the summer handicap, the course is clearly marked and if you tu
 
 Meet at the main car park in Prospect Park at 7:00pm for the first runner to be away by 19:20pm.
 
-Please try to turn up on time as this time of the year the light fades quickly - Thankyou.
-
 After the Handicap many will go up to the Mansion House to replace lost liquid and a chat.
