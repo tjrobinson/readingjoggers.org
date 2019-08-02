@@ -1,8 +1,10 @@
 This session is a mixture of grass and trail.
  
-There are two possible courses that I use which are dependent on the weather
+Due to the evenings drawing in this will be the last of the Kenyan Hills in Prospect Park for the 2019 season.
  
-The long course is about 1400 metres and the shorter one about 900 metres.
+There are three possible courses that we use which are dependent on the weather.
+ 
+The long course is about 1700 metres, the middle is about 1400 metres and the shorter one about 900 metres.
  
 As you start and finish in the same place the ups and downs are the same, but there is very little flat, if any.
  
