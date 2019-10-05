@@ -12,7 +12,7 @@ export class EventItemComponent implements OnInit {
 
   ngOnInit() {
 
-    this.formattedDate = format(this.event.date, "dddd Do MMMM yyyy")
+    this.formattedDate = format(this.event.date, "EEEE d MMMM yyyy")
 
     this.descriptionTemplateUrl = './data/events/templates/' + this.event.descriptionTemplate + '.md';
   }
