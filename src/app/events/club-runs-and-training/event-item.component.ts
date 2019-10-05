@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IEvent } from "./IEvent";
-import * as format from "date-fns/format";
+import { format } from "date-fns";
 
 @Component({
   selector: 'event-item',
@@ -12,7 +12,7 @@ export class EventItemComponent implements OnInit {
 
   ngOnInit() {
 
-    this.formattedDate = format(this.event.date, "dddd Do MMMM YYYY")
+    this.formattedDate = format(this.event.date, "dddd Do MMMM yyyy")
 
     this.descriptionTemplateUrl = './data/events/templates/' + this.event.descriptionTemplate + '.md';
   }
