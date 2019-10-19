@@ -63,6 +63,11 @@ export class EventsService {
         location: "beansheaf"
       },
       {
+        date: new Date("2019-11-03"),
+        time: "9:20am",
+        title: "Winter Handicap #1",
+      },
+      {
         date: new Date("2019-11-05"),
         time: "7pm for a 7:20pm start",
         title: "Club run @ Beansheaf",
@@ -102,6 +107,11 @@ export class EventsService {
         title: "Up and Down @ Prospect Park",
         descriptionTemplate: "up-and-down-session-b",
         location: "prospect-park"
+      },
+      {
+        date: new Date("2019-11-24"),
+        time: "9:20am",
+        title: "Winter Handicap #2",
       },
       {
         date: new Date("2019-11-26"),
