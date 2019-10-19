@@ -51,12 +51,6 @@ export const appRoutes: Routes = [
           pathMatch: 'prefix'
         },
         {
-          path: 'club-championship',
-          component: ClubChampionshipComponent,
-          data: { title: 'Club Championship' },
-          pathMatch: 'prefix'
-        },
-        {
           path: 'social-events',
           component: SocialEventsComponent,
           data: { title: 'Social Events' },

@@ -7,33 +7,33 @@ export class EventsService {
 
   getEvents = () => {
     return <IEvent[]>[
-      {
-        date: new Date("2019-10-08"),
-        time: "7pm for a 7:20pm start",
-        title: "Club run @ Beansheaf",
-        descriptionTemplate: "club-run-beansheaf",
-        location: "beansheaf"
-      },
-      {
-        date: new Date("2019-10-10"),
-        time: "7pm for a 7:20pm start",
-        title: "500m 1000m 1500m 1000m 500m  - Up and down Pyramid @ Lansdowne Road / Grafton Road Circuit",
-        descriptionTemplate: "500m-1000m-1500m-pyramid"
-      },
-      {
-        date: new Date("2019-10-15"),
-        time: "7pm for a 7:20pm start",
-        title: "Club run @ Beansheaf",
-        descriptionTemplate: "club-run-beansheaf",
-        location: "beansheaf"
-      },
-      {
-        date: new Date("2019-10-17"),
-        time: "7pm for a 7:20pm start",
-        title: "Up and Down @ Prospect Park",
-        descriptionTemplate: "up-and-down-session-a",
-        location: "prospect-park"
-      },
+      // {
+      //   date: new Date("2019-10-08"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "Club run @ Beansheaf",
+      //   descriptionTemplate: "club-run-beansheaf",
+      //   location: "beansheaf"
+      // },
+      // {
+      //   date: new Date("2019-10-10"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "500m 1000m 1500m 1000m 500m  - Up and down Pyramid @ Lansdowne Road / Grafton Road Circuit",
+      //   descriptionTemplate: "500m-1000m-1500m-pyramid"
+      // },
+      // {
+      //   date: new Date("2019-10-15"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "Club run @ Beansheaf",
+      //   descriptionTemplate: "club-run-beansheaf",
+      //   location: "beansheaf"
+      // },
+      // {
+      //   date: new Date("2019-10-17"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "Up and Down @ Prospect Park",
+      //   descriptionTemplate: "up-and-down-session-a",
+      //   location: "prospect-park"
+      // },
       {
         date: new Date("2019-10-22"),
         time: "7pm for a 7:20pm start",
@@ -66,6 +66,7 @@ export class EventsService {
         date: new Date("2019-11-03"),
         time: "9:20am",
         title: "Winter Handicap #1",
+        descriptionTemplate: "winter-handicap"
       },
       {
         date: new Date("2019-11-05"),
@@ -112,6 +113,7 @@ export class EventsService {
         date: new Date("2019-11-24"),
         time: "9:20am",
         title: "Winter Handicap #2",
+        descriptionTemplate: "winter-handicap"
       },
       {
         date: new Date("2019-11-26"),

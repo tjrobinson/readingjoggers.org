@@ -1,1 +1,1 @@
-Meet at <a routerLink="/find-us/other-locations">Sulham Woods</a> for the	fifth of this season's<a routerLink="/events/winter-handicap">Winter Handicap</a> runs.
+See <a routerLink="/events/winter-handicap">Winter Handicap</a>.
