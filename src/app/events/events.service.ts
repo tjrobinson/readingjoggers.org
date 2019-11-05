@@ -7,67 +7,6 @@ export class EventsService {
 
   getEvents = () => {
     return <IEvent[]>[
-      // {
-      //   date: new Date("2019-10-08"),
-      //   time: "7pm for a 7:20pm start",
-      //   title: "Club run @ Beansheaf",
-      //   descriptionTemplate: "club-run-beansheaf",
-      //   location: "beansheaf"
-      // },
-      // {
-      //   date: new Date("2019-10-10"),
-      //   time: "7pm for a 7:20pm start",
-      //   title: "500m 1000m 1500m 1000m 500m  - Up and down Pyramid @ Lansdowne Road / Grafton Road Circuit",
-      //   descriptionTemplate: "500m-1000m-1500m-pyramid"
-      // },
-      // {
-      //   date: new Date("2019-10-15"),
-      //   time: "7pm for a 7:20pm start",
-      //   title: "Club run @ Beansheaf",
-      //   descriptionTemplate: "club-run-beansheaf",
-      //   location: "beansheaf"
-      // },
-      // {
-      //   date: new Date("2019-10-17"),
-      //   time: "7pm for a 7:20pm start",
-      //   title: "Up and Down @ Prospect Park",
-      //   descriptionTemplate: "up-and-down-session-a",
-      //   location: "prospect-park"
-      // },
-      {
-        date: new Date("2019-10-22"),
-        time: "7pm for a 7:20pm start",
-        title: "Club run @ Beansheaf",
-        descriptionTemplate: "club-run-beansheaf",
-        location: "beansheaf"
-      },
-      {
-        date: new Date("2019-10-24"),
-        time: "7pm for a 7:20pm start",
-        title: "Beat your distance @ Old Bath Road, Theale",
-        descriptionTemplate: "beat-your-distance-theale",
-        location: "theale"
-      },
-      {
-        date: new Date("2019-09-29"),
-        time: "7pm for a 7:20pm start",
-        title: "Club run @ Prospect Park",
-        descriptionTemplate: "club-run-prospect-park",
-        location: "prospect-park"
-      },
-      {
-        date: new Date("2019-10-31"),
-        time: "7pm for a 7:20pm start",
-        title: "400 - 800m Intervals @ Beansheaf",
-        descriptionTemplate: "400m-800m-intervals",
-        location: "beansheaf"
-      },
-      {
-        date: new Date("2019-11-03"),
-        time: "9:20am",
-        title: "Winter Handicap #1",
-        descriptionTemplate: "winter-handicap"
-      },
       {
         date: new Date("2019-11-05"),
         time: "7pm for a 7:20pm start",
@@ -85,9 +24,9 @@ export class EventsService {
       {
         date: new Date("2019-11-12"),
         time: "7pm for a 7:20pm start",
-        title: "Club run @ Beansheaf",
-        descriptionTemplate: "club-run-beansheaf",
-        location: "beansheaf"
+        title: "Club Relay and London Ballot Night @ Prospect Park, then Mansion House",
+        descriptionTemplate: "club-run-prospect-park",
+        location: "prospect-park"
       },
       {
         date: new Date("2019-11-14"),
