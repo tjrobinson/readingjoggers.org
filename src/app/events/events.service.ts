@@ -8,23 +8,9 @@ export class EventsService {
   getEvents = () => {
     return <IEvent[]>[
       {
-        date: new Date("2019-11-05"),
-        time: "7pm for a 7:20pm start",
-        title: "Club run @ Beansheaf",
-        descriptionTemplate: "club-run-beansheaf",
-        location: "beansheaf"
-      },
-      {
-        date: new Date("2019-11-07"),
-        time: "7pm for a 7:20pm start",
-        title: "Three Minute Cycle @ Prospect Park",
-        descriptionTemplate: "three-minute-cycle",
-        location: "prospect-park"
-      },
-      {
         date: new Date("2019-11-12"),
         time: "7pm for a 7:20pm start",
-        title: "Club Relay and London Ballot Night @ Prospect Park, then Mansion House",
+        title: "Club Run (Check Facebook) @ Prospect Park",
         descriptionTemplate: "club-run-prospect-park",
         location: "prospect-park"
       },
