@@ -1,1 +1,1 @@
-See <a routerLink="/events/winter-handicap">Winter Handicap</a>.
+See <a href="/events/winter-handicap">Winter Handicap</a>.
