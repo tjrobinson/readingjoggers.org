@@ -16,7 +16,7 @@ This is a limited session during the winter because of finding enough space that
  
 You will run for three minutes and then you will have a two minute active recovery.
  
-There will be 6 sets in total.
+There will be 6 or 7 sets in total.
  
 There will be a thorough warm up including some drills.
  

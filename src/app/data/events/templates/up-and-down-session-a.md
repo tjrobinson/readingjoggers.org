@@ -12,4 +12,4 @@ Please keep to the left in each direction.
  
 Repeat the above until the set time is reached (about 35 to 40 minutes). 
  
-Aim:- Correct running uphill, maintaining the effort at the top and then correct relaxed running downhill
+Aim: Correct running uphill, maintaining the effort at the top and then correct relaxed running downhill.
