@@ -40,3 +40,6 @@ Thumbs.db
 
 # Terraform
 .terraform
+.vs/slnx.sqlite
+.vs/readingjoggers.org/v16/.suo
+.vs/VSWorkspaceState.json
