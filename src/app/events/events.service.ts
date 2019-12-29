@@ -46,7 +46,8 @@ export class EventsService {
         date: new Date("2020-01-23"),
         time: "7pm for a 7:20pm start",
         title: "1000m Scorpions @ Lansdowne Road / Grafton Road Circuit",
-        descriptionTemplate: "1000m-scorpions"
+        descriptionTemplate: "1000m-scorpions",
+        location: "lansdowne-road"
       },
       {
         date: new Date("2020-01-30"),
@@ -80,7 +81,8 @@ export class EventsService {
         date: new Date("2020-02-27"),
         time: "7pm for a 7:20pm start",
         title: "500m 1000m 1500m 1000m 500m - Up and Down Pyramid @ Lansdowne Road / Grafton Road Circuit",
-        descriptionTemplate: "500m-1000m-1500m-pyramid"
+        descriptionTemplate: "500m-1000m-1500m-pyramid",
+        location: "lansdowne-road"
       },
       {
         date: new Date("2020-03-05"),

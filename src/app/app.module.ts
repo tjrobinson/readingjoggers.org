@@ -38,6 +38,7 @@ import { appRoutes } from './app.routes';
 import { FooterComponent } from './footer.component';
 import { EventItemComponent } from './events/club-runs-and-training/event-item.component';
 import { EventsService } from './events/events.service';
+import { LansdowneRoadComponent } from './find-us/lansdowne-road/lansdowneRoad.component';
 
 
 @NgModule({
@@ -63,6 +64,7 @@ import { EventsService } from './events/events.service';
     ProspectParkComponent,
     BeansheafComponent,
     OtherLocationsComponent,
+    LansdowneRoadComponent,
     NewsComponent,
     AgmMinutesComponent,
     NavigationComponent,

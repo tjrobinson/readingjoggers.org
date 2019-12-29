@@ -9,6 +9,7 @@ import { FindUsComponent } from "./find-us/find-us.component";
 import { BeansheafComponent } from "./find-us/beansheaf/beansheaf.component";
 import { ProspectParkComponent } from "./find-us/prospect-park/prospect-park.component";
 import { OtherLocationsComponent } from "./find-us/other-locations/other-locations.component";
+import { LansdowneRoadComponent } from "./find-us/lansdowne-road/lansdowneRoad.component";
 import { AboutComponent } from "./about/about.component";
 import { AboutUsComponent } from "./about/about-us/about-us.component";
 import { CommitteeComponent } from "./about/committee/committee.component";
@@ -78,6 +79,12 @@ export const appRoutes: Routes = [
           path: 'prospect-park',
           component: ProspectParkComponent,
           data: { title: 'Prospect Park' },
+          pathMatch: 'prefix'
+        },
+        {
+          path: 'lansdowne-road',
+          component: LansdowneRoadComponent,
+          data: { title: 'Lansdowne Road / Grafton Road Circuit' },
           pathMatch: 'prefix'
         },
         {
