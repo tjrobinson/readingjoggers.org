@@ -8,13 +8,6 @@ export class EventsService {
   getEvents = () => {
     return <IEvent[]>[
       {
-        date: new Date("2020-01-02"),
-        time: "7pm for a 7:20pm start",
-        title: "400 - 800m Intervals Intervals @ Beansheaf",
-        descriptionTemplate: "400m-800m-intervals",
-        location: "beansheaf"
-      },
-      {
         date: new Date("2020-01-07"),
         time: "7pm for a 7:20pm start",
         title: "Club run @ Beansheaf",
