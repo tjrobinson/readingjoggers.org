@@ -24,7 +24,7 @@
     "date-fns": "^2.8.1",
     "jquery": "^3.4.1",
     "ngx-markdown": "^8.2.1",
-    "popper.js": "^1.16.0",
+    "popper.js": "^1.16.1",
     "rxjs": "~6.5.4",
     "zone.js": "~0.10.2"
   },
