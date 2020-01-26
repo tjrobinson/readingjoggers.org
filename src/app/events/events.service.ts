@@ -58,7 +58,7 @@ export class EventsService {
       {
         date: new Date("2020-01-28"),
         time: "7pm for a 7:20pm start",
-        title: "Club run @ Prospect Park",
+        title: "Club Run & Summer Handicap Awards @ Prospect Park",
         descriptionTemplate: "club-run-prospect-park",
         location: "prospect-park"
       },
