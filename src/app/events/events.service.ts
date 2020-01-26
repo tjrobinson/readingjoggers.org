@@ -7,54 +7,54 @@ export class EventsService {
 
   getEvents = () => {
     return <IEvent[]>[
-      {
-        date: new Date("2020-01-07"),
-        time: "7pm for a 7:20pm start",
-        title: "Club run @ Beansheaf",
-        descriptionTemplate: "club-run-beansheaf",
-        location: "beansheaf"
-      },
-      {
-        date: new Date("2020-01-09"),
-        time: "7pm for a 7:20pm start",
-        title: "Three Minute Cycle @ Prospect Park",
-        descriptionTemplate: "three-minute-cycle",
-        location: "prospect-park"
-      },
-      {
-        date: new Date("2020-01-12"),
-        time: "9am for 9:20am start",
-        title: "Winter Handicap #3",
-        descriptionTemplate: "winter-handicap"
-      },
-      {
-        date: new Date("2020-01-14"),
-        time: "7pm for a 7:20pm start",
-        title: "Club run @ Beansheaf",
-        descriptionTemplate: "club-run-beansheaf",
-        location: "beansheaf"
-      },
-      {
-        date: new Date("2020-01-16"),
-        time: "7pm for a 7:20pm start",
-        title: "Beat your Distance @ Theale",
-        descriptionTemplate: "beat-your-distance-theale",
-        location: "theale"
-      },
-      {
-        date: new Date("2020-01-21"),
-        time: "7pm for a 7:20pm start",
-        title: "Club run @ Beansheaf",
-        descriptionTemplate: "club-run-beansheaf",
-        location: "beansheaf"
-      },
-      {
-        date: new Date("2020-01-23"),
-        time: "7pm for a 7:20pm start",
-        title: "1000m Scorpions @ Lansdowne Road / Grafton Road Circuit",
-        descriptionTemplate: "1000m-scorpions",
-        location: "lansdowne-road"
-      },
+      // {
+      //   date: new Date("2020-01-07"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "Club run @ Beansheaf",
+      //   descriptionTemplate: "club-run-beansheaf",
+      //   location: "beansheaf"
+      // },
+      // {
+      //   date: new Date("2020-01-09"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "Three Minute Cycle @ Prospect Park",
+      //   descriptionTemplate: "three-minute-cycle",
+      //   location: "prospect-park"
+      // },
+      // {
+      //   date: new Date("2020-01-12"),
+      //   time: "9am for 9:20am start",
+      //   title: "Winter Handicap #3",
+      //   descriptionTemplate: "winter-handicap"
+      // },
+      // {
+      //   date: new Date("2020-01-14"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "Club run @ Beansheaf",
+      //   descriptionTemplate: "club-run-beansheaf",
+      //   location: "beansheaf"
+      // },
+      // {
+      //   date: new Date("2020-01-16"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "Beat your Distance @ Theale",
+      //   descriptionTemplate: "beat-your-distance-theale",
+      //   location: "theale"
+      // },
+      // {
+      //   date: new Date("2020-01-21"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "Club run @ Beansheaf",
+      //   descriptionTemplate: "club-run-beansheaf",
+      //   location: "beansheaf"
+      // },
+      // {
+      //   date: new Date("2020-01-23"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "1000m Scorpions @ Lansdowne Road / Grafton Road Circuit",
+      //   descriptionTemplate: "1000m-scorpions",
+      //   location: "lansdowne-road"
+      // },
       {
         date: new Date("2020-01-28"),
         time: "7pm for a 7:20pm start",
@@ -100,7 +100,7 @@ export class EventsService {
       {
         date: new Date("2020-02-13"),
         time: "7pm for a 7:20pm start",
-        title: "Three Minute Cycle @ Prospect Park (with Mary)",
+        title: "Three Minute Cycle @ Prospect Park",
         descriptionTemplate: "three-minute-cycle",
         location: "prospect-park"
       },
