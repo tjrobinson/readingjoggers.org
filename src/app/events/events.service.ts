@@ -55,69 +55,69 @@ export class EventsService {
       //   descriptionTemplate: "1000m-scorpions",
       //   location: "lansdowne-road"
       // },
-      {
-        date: new Date("2020-01-28"),
-        time: "7pm for a 7:20pm start",
-        title: "Club Run & Summer Handicap Awards @ Prospect Park",
-        descriptionTemplate: "club-run-prospect-park",
-        location: "prospect-park"
-      },
-      {
-        date: new Date("2020-01-30"),
-        time: "7pm for a 7:20pm start",
-        title:
-          "High Intensity Training (HIT) or High Intensity Interval Training (HIIT) @ Theale",
-        descriptionTemplate: "high-intensity-training-theale",
-        location: "theale"
-      },
-      {
-        date: new Date("2020-02-02"),
-        time: "9am for 9:20am start",
-        title: "Winter Handicap #4",
-        descriptionTemplate: "winter-handicap"
-      },
-      {
-        date: new Date("2020-02-04"),
-        time: "7pm for a 7:20pm start",
-        title: "Club run @ Beansheaf",
-        descriptionTemplate: "club-run-beansheaf",
-        location: "beansheaf"
-      },
-      {
-        date: new Date("2020-02-06"),
-        time: "7pm for a 7:20pm start",
-        title: "Up and Down @ Prospect Park",
-        descriptionTemplate: "up-and-down-session-a",
-        location: "prospect-park"
-      },
-      {
-        date: new Date("2020-02-11"),
-        time: "7pm for a 7:20pm start",
-        title: "Club run @ Beansheaf",
-        descriptionTemplate: "club-run-beansheaf",
-        location: "beansheaf"
-      },
-      {
-        date: new Date("2020-02-13"),
-        time: "7pm for a 7:20pm start",
-        title: "Three Minute Cycle @ Prospect Park",
-        descriptionTemplate: "three-minute-cycle",
-        location: "prospect-park"
-      },
-      {
-        date: new Date("2020-02-18"),
-        time: "7pm for a 7:20pm start",
-        title: "Club run @ Beansheaf",
-        descriptionTemplate: "club-run-beansheaf",
-        location: "beansheaf"
-      },
-      {
-        date: new Date("2020-02-20"),
-        time: "7pm for a 7:20pm start",
-        title: "800m Intervals @ Beansheaf",
-        descriptionTemplate: "800m-intervals",
-        location: "beansheaf"
-      },
+      // {
+      //   date: new Date("2020-01-28"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "Club Run & Summer Handicap Awards @ Prospect Park",
+      //   descriptionTemplate: "club-run-prospect-park",
+      //   location: "prospect-park"
+      // },
+      // {
+      //   date: new Date("2020-01-30"),
+      //   time: "7pm for a 7:20pm start",
+      //   title:
+      //     "High Intensity Training (HIT) or High Intensity Interval Training (HIIT) @ Theale",
+      //   descriptionTemplate: "high-intensity-training-theale",
+      //   location: "theale"
+      // },
+      // {
+      //   date: new Date("2020-02-02"),
+      //   time: "9am for 9:20am start",
+      //   title: "Winter Handicap #4",
+      //   descriptionTemplate: "winter-handicap"
+      // },
+      // {
+      //   date: new Date("2020-02-04"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "Club run @ Beansheaf",
+      //   descriptionTemplate: "club-run-beansheaf",
+      //   location: "beansheaf"
+      // },
+      // {
+      //   date: new Date("2020-02-06"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "Up and Down @ Prospect Park",
+      //   descriptionTemplate: "up-and-down-session-a",
+      //   location: "prospect-park"
+      // },
+      // {
+      //   date: new Date("2020-02-11"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "Club run @ Beansheaf",
+      //   descriptionTemplate: "club-run-beansheaf",
+      //   location: "beansheaf"
+      // },
+      // {
+      //   date: new Date("2020-02-13"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "Three Minute Cycle @ Prospect Park",
+      //   descriptionTemplate: "three-minute-cycle",
+      //   location: "prospect-park"
+      // },
+      // {
+      //   date: new Date("2020-02-18"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "Club run @ Beansheaf",
+      //   descriptionTemplate: "club-run-beansheaf",
+      //   location: "beansheaf"
+      // },
+      // {
+      //   date: new Date("2020-02-20"),
+      //   time: "7pm for a 7:20pm start",
+      //   title: "800m Intervals @ Beansheaf",
+      //   descriptionTemplate: "800m-intervals",
+      //   location: "beansheaf"
+      // },
       {
         date: new Date("2020-02-25"),
         time: "7pm for a 7:20pm start",
