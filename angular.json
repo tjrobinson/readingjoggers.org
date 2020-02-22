@@ -30,7 +30,11 @@
               "src/js",
               "src/.well-known",
               "src/.htaccess",
-              { "glob": "**/*.md", "input": "src/app", "output": "/" }
+              {
+                "glob": "**/*.md",
+                "input": "src/app",
+                "output": "/"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -145,5 +149,8 @@
       }
     }
   },
-  "defaultProject": "readingjoggers"
+  "defaultProject": "readingjoggers",
+  "cli": {
+    "analytics": "88701f3a-fa53-4991-9f75-e054999fce33"
+  }
 }
