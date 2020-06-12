@@ -22,12 +22,11 @@ jobs:
 
     - name: npm ci
       run: npm ci
-        ls -al $GITHUB_WORKSPACE/dist/readingjoggers
         
     - name: npm run build
       run: npm run build
    
-   - name: List output
+    - name: List output
       run: ls -al $GITHUB_WORKSPACE/dist/readingjoggers
         
     - name: FTP Deploy
