@@ -4,7 +4,7 @@ https://www.readingjoggers.org/
 
 ## Build Status
 
-[![Build Status](https://dev.azure.com/readingjoggers/Reading%20Joggers/_apis/build/status/Build%20Site)](https://dev.azure.com/readingjoggers/Reading%20Joggers/_build/latest?definitionId=1)
+![Deploy](https://github.com/tjrobinson/readingjoggers.org/workflows/Deploy/badge.svg)
 
 ## Development server
 
