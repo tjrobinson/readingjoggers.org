@@ -25,6 +25,7 @@ jobs:
       run: |
         npm ci
         npm run build
+        ls -al $GITHUB_WORKSPACE/dist/readingjoggers
         
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
@@ -36,6 +37,6 @@ jobs:
         # FTP account password
         ftp-password: ${{ secrets.FTP_PASSWORD }}
         # The local folder to copy, defaults to root project folder
-        local-dir: dist/readingjoggers
+        local-dir: $GITHUB_WORKSPACE/dist/readingjoggers
         # Passes through options into git-ftp
         git-ftp-args: # optional
