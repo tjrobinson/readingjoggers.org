@@ -5,6 +5,7 @@ https://www.readingjoggers.org/
 ## Build Status
 
 ![Deploy](https://github.com/tjrobinson/readingjoggers.org/workflows/Deploy/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=tjrobinson_readingjoggers.org&metric=alert_status)](https://sonarcloud.io/dashboard?id=tjrobinson_readingjoggers.org)
 
 ## Development server
 
